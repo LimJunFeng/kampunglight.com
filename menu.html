@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Icon.webp">
+    <title>🍲Kampung Kitchen Delights🍲</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--bootstrap animation-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	
+<!--Ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/javascript.js"></script>
+
+
+<style>
+/**/
+/*-- Fixed Background Image in menu --*/
+.fixed{
+  background-image: url(images/back/malaysia.jpg);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.fixed-background{
+  padding: 10rem 0;
+}
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+
+/*end fixed background in location*/
+
+
+
+  /*menu selection styling*/
+    .custom-button {
+    background-color: #FFDAB9; /* Change to your desired color */
+    border: 1px solid #FF6347;
+
+}
+
+.custom-button:hover {
+    background-color: #495057; /* Change to a darker shade for hover effect */
+    border-color: #495057; /* Change border color if needed */
+}
+#foodItems a,#drinkItems a,#snackItems a{
+    text-decoration: none;
+}
+
+
+
+
+</style>
+
+<body >
+
+     <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <div class="container">
+        <!--Logo-->
+        <a href="homepage.html" class="navbar-brand"><img src="images/klogo.png" alt="Logo" title="Logo"></a>
+        
+        
+        <!-- Navbar Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="KampungKitchenDelight.html" class="nav-link scrollto active">Homepage</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link scrollto ">About Us</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link scrollto ">Menu</a></li>
+                <li class="nav-item"><a href="location.html" class="nav-link scrollto ">Location</a></li>
+				<li class="nav-item"><a href="contactus.html" class="nav-link scrollto ">Contact Us</a></li>
+
+               
+            </ul>
+           
+        </div>
+    </div>
+</nav>
+<!--menu title-->
+<div class="container-fluid padding">
+	
+	<div class="row welcome text-center text-dark">
+
+		<div class="col-12" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+			<h1 class="display-4 text-dark"><span style="font-weight: 600;">Menu</span></h1>
+
+
+		</div>
+		<hr>
+	</div>
+</div>
+<!--end menu title-->
+<!--fixed background-->
+<div class="fixed-background">
+
+	<div class="row text-dark py-5 pt-4">
+
+	<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+<h1><span style="color: lightslategray;">Welcome to Kampung Kitchen Delight</span></h1>
+
+	</div>
+	</div>
+	<div class="fixed-wrap">
+		<div class="fixed"></div>
+
+		
+	</div>
+</div>
+<!--end fixed background-->
+
+
+<!--button-->
+<div class="container text-center mt-4" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+    <div class="row">
+        
+        <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+            <button id="foodButton" class="btn  col-12 custom-button fly-in">Food</button>
+        </div>
+        <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+            <button id="drinkButton" class="btn  col-12 custom-button fly-in">Drink</button> 
+        </div>
+        <div class="col-12 col-lg-4 mx-auto mb-2 mb-lg-0">
+            <button id="snackButton" class="btn col-12 custom-button fly-in">Snack</button>
+        </div>
+    </div>
+</div>
+<!--end button-->
+
+<!--card-->
+
+<div id="foodItems" class="row"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"> 
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item" >
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/bak-kut-teh-1.jpg" alt="">
+                
+                                </div>
+                               
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href=""> <i class="fas fa-thumbs-up"></i>Bak-Kut-Teh</a>
+                    
+                                    <span class="text-body text-decoration-line-through">RM13.00</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/AsamLaksa.webp" alt="">
+                 
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Asam Laksa</a>
+                            
+                                    <span class="text-body text-decoration-line-through">RM10.00</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/charkoayteow1.jpg.webp" alt="">
+                                   
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Char Kuey Teow</a>
+                                    <span class="text-body text-decoration-line-through">RM9.00</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/kari-ayam.jpg.webp" alt="">
+                                   
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Kari Ayam</a>
+                                  
+                                    <span class="text-body text-decoration-line-through">RM14.00</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/nasi-lemak-malaysia-.jpg" alt="">
+                                   
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Nasi Lemak</a>
+                                  
+                                    <span class="text-body text-decoration-line-through">RM11.00</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/NasiKerabu.webp" alt="">
+                                   
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Nasi Kerabu</a>
+                                  
+                                    <span class="text-body text-decoration-line-through">RM14.00</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/hokkien-mee.jpg.webp" alt="">
+                                   
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Hokkien Mee</a>
+                                  
+                                    <span class="text-body text-decoration-line-through">RM10.00</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+                            <div class="food-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="images/Foods/rendang-1.jpg.webp" alt="">
+                                   
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="">Nasi Ayam Rendang</a>
+                                  
+                                    <span class="text-body text-decoration-line-through">RM13.00</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+                       
+                        </div>
+                        <!--drinkItems-->
+
+<div id="drinkItems" class="row d-none"> 
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/IpohWhiteCoffe.png" alt="">
+
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Ipoh White Coffe</a>
+                <span class="text-body text-decoration-line-through">RM3.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/LimauAsamBoi.png" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Limau Asam Boi</a>
+                <span class="text-body text-decoration-line-through">RM5.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/SirapSelasih.png" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Sirap Selasih</a>
+                <span class="text-body text-decoration-line-through">RM7.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/ThreeLayerTea.png" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Three Layer Tea</a>
+                <span class="text-body text-decoration-line-through">RM5.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/IcedBarley.png" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Iced Barley</a>
+                <span class="text-body text-decoration-line-through">RM4.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/sirap-bandung-cincau.jpeg" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Sirap Bandang Cincau</a>
+                <span class="text-body text-decoration-line-through">RM6.00</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/LonganJuice.png" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Longan Juice</a>
+                <span class="text-body text-decoration-line-through">RM5.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="drink-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Drinks/MiloDinosaur.png" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Milo Dinasaur</a>
+                <span class="text-body text-decoration-line-through">RM7.00</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</div>
+
+<!--end drinkItems-->
+
+<!--snackItems-->
+
+<div id="snackItems" class="row d-none"> 
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/Popiah.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Popiah</a>
+                <span class="text-body text-decoration-line-through">RM5.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/ApamBalik.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Apam Balik</a>
+                <span class="text-body text-decoration-line-through">RM5.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/chendol1.jpg.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Cendol</a>
+                <span class="text-body text-decoration-line-through">RM6.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/ohchien.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Ohchien</a>
+                <span class="text-body text-decoration-line-through">RM10.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/roti-tisu.jpg.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href=""><i class="fas fa-thumbs-up"></i>Roti Tisu</a>
+                <span class="text-body text-decoration-line-through">RM5.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/RotiCanai.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Roti Canai</a>
+                <span class="text-body text-decoration-line-through">RM3.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/satay.jpg.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Satay</a>
+                <span class="text-body text-decoration-line-through">RM7.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp mb-4 p-4">
+        <div class="snack-item">
+            <div class="position-relative bg-light overflow-hidden">
+                <img class="img-fluid w-100" src="images/Snacks/pisang-goreng.jpg.webp" alt="">
+            </div>
+            <div class="text-center p-4">
+                <a class="d-block h5 mb-2" href="">Pisang Goreng</a>
+                <span class="text-body text-decoration-line-through">RM4.00</span>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+<!--end snackItems-->
+
+                 
+                        <!--- Footer -->
+<footer  class="footer-animation">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4 contact-info">
+				<img src="images/klogo.png" alt="">
+				<hr class="light">
+				<p><i class="fas fa-phone"></i> 07-1234567</p>
+				<p><i class="far fa-envelope"></i> KampungKitchenDelight@gmail.com</p>
+				<p><i class="fas fa-map-marker-alt"></i>2， Jln Adda 3/3, Taman Adda Heights</p>
+				<div class="col-md-6 social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+
+			</div>
+			
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Operation Hours</h5>
+				<hr class="light">
+				<p>Monday: 9am-9pm</p>
+				<p>Tuesday: 9am-9pm</p>
+				<p>Wednesday: 9am-9pm</p>
+				<p>Thursday: 9am-9pm</p>
+				<p>Friday: 9am-9pm</p>
+				<p>Saturday: 9am - 8pm</p>
+				<p>Sunday:closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Core Values</h5>
+				<hr class="light">
+				<p>Authenticity</p>
+				<p>Quality Ingredients</p>
+				<p>Warm Hospitality</p>
+				<p>Community Connection</p>
+				
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy;🍲Kampung Kitchen Delights🍲</h5>
+			</div>
+
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+        <!--bootstrap animation-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+	duration: 3000,
+	once: true,
+  });
+</script>             
+                  
+<!--food,drink,snack button for display-->
+                        <script>
+                         document.addEventListener('DOMContentLoaded', function() {
+    function showFood() {
+        document.getElementById('foodItems').classList.remove('d-none');
+        document.getElementById('drinkItems').classList.add('d-none');
+        document.getElementById('snackItems').classList.add('d-none');
+    }
+
+    function showDrink() {
+        document.getElementById('foodItems').classList.add('d-none');
+        document.getElementById('drinkItems').classList.remove('d-none');
+        document.getElementById('snackItems').classList.add('d-none');
+    }
+
+    function showSnack() {
+        document.getElementById('foodItems').classList.add('d-none');
+        document.getElementById('drinkItems').classList.add('d-none');
+        document.getElementById('snackItems').classList.remove('d-none');
+    }
+
+    showFood();
+
+    document.getElementById('foodButton').addEventListener('click', showFood);
+    document.getElementById('drinkButton').addEventListener('click', showDrink);
+    document.getElementById('snackButton').addEventListener('click', showSnack);
+
+});
+
+                            </script>
+                            
+    	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link rel="shortcut icon" href="images/Icon.webp">
+    <title>🍲Kampung Kitchen Delights🍲</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+<!--Ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/javascript.js"></script>
+
+</head>
+<body>
+     <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <div class="container">
+        <!--Logo-->
+        <a href="homepage.html" class="navbar-brand"><img src="images/klogo.png" alt="Logo" title="Logo"></a>
+        
+        
+        <!-- Navbar Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="KampungKitchenDelight.html" class="nav-link scrollto active">Homepage</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link scrollto ">About Us</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link scrollto ">Menu</a></li>
+                <li class="nav-item"><a href="location.html" class="nav-link scrollto ">Location</a></li>
+				<li class="nav-item"><a href="contactus.html" class="nav-link scrollto ">Contact Us</a></li>
+
+               
+            </ul>
+         
+        </div>
+    </div>
+</nav>
+<!--contact us form-->
+<div class="container contact-container">
+    <h1>Online Booking Table</h1>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="reservation-date">Reservation Date (Optional)</label>
+            <input type="date" class="form-control" id="reservation-date" name="reservation-date">
+        </div>
+        <div class="form-group">
+            <label for="reservation-time">Reservation Time (Optional)</label>
+            <input type="time" class="form-control" id="reservation-time" name="reservation-time">
+        </div>
+        <div class="form-group">
+            <label for="guests">Number of Guests (Optional)</label>
+            <input type="number" class="form-control" id="guests" name="guests">
+        </div>
+        <div class="form-group">
+            <label for="special-requests">Special Requests (Optional)</label>
+            <textarea class="form-control" id="special-requests" name="special-requests" rows="4"></textarea>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="privacy-consent" name="privacy-consent" required>
+            <label class="form-check-label" for="privacy-consent">I agree to the privacy policy</label>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+    </form>
+    <div class="mt-4 social-icons">
+        <p>Follow us on:</p>
+        
+        <p>
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i> KampungKitchenDelight
+            </a>
+        </p>
+        <p>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i> @KampungKitchenDelight
+            </a>
+        </p>
+    </div>
+    <div class="success-message" id="successMessage">
+        Your form has been submitted successfully!
+    </div>
+    </div>
+    <!--- Footer -->
+<footer  class="footer-animation mt-4">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4 contact-info">
+				<img src="images/klogo.png" alt="">
+				<hr class="light">
+				<p><i class="fas fa-phone"></i> 07-1234567</p>
+				<p><i class="far fa-envelope"></i> KampungKitchenDelight@gmail.com</p>
+				<p><i class="fas fa-map-marker-alt"></i>2， Jln Adda 3/3, Taman Adda Heights</p>
+
+				<div class="col-md-6 social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+
+
+			</div>
+			
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Operation Hours</h5>
+				<hr class="light">
+				<p>Monday: 9am-9pm</p>
+				<p>Tuesday: 9am-9pm</p>
+				<p>Wednesday: 9am-9pm</p>
+				<p>Thursday: 9am-9pm</p>
+				<p>Friday: 9am-9pm</p>
+				<p>Saturday: 9am - 8pm</p>
+				<p>Sunday:closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Core Values</h5>
+				<hr class="light">
+				<p>Authenticity</p>
+				<p>Quality Ingredients</p>
+				<p>Warm Hospitality</p>
+				<p>Community Connection</p>
+				
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy;🍲Kampung Kitchen Delights🍲</h5>
+			</div>
+
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+<script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Perform form validation (if needed)
+            // If form is valid, hide all elements except success message
+            document.getElementById('contactForm').style.display = 'none';
+            document.querySelector('.social-icons').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+</script>
+
+<!--end navigation-->
+    	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+</body>
+</html>

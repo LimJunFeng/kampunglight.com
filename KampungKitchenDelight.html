@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="images/Icon.webp">
+	<title>🍲Kampung Kitchen Delights🍲</title>
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!--whiout this link cannot work-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--bootstrap animation-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Add these scripts before the closing -->
+	
+<!-- _____ Slick Slider _____ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<!--Ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/javascript.js"></script>
+
+<style>
+
+	.rev-section{
+	  margin: auto;
+	  padding: 0 1rem;
+	  max-width: 1100px;
+	  text-align: center;
+	}
+	
+	.title{
+	  font-size: 2.5rem;
+	  text-transform: uppercase;
+	  color: rgb(50, 50, 50);
+	  margin-bottom: .5rem;
+	}
+	.note{
+  font-size: 1.1rem;
+  color: black;
+  font-style: italic;
+  font-weight: bold; /* Example font property */
+}
+
+	
+	.reviews{
+	  margin: 2rem auto;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	.review{
+	  margin: 0 1rem;
+	  min-width: 300px;
+	  flex: 1;
+	}
+	
+	.head-review{
+	  margin: 1.75rem auto;
+	  width: 150px;
+	  height: 150px;
+	}
+	.reviews img{
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  border-radius: 50%;
+	  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+	}
+	
+	.body-review{
+	  background-color: rgb(238, 238, 238);
+	  padding: 2.5rem;
+	  box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+	  
+	}
+	.name-review{
+	  font-size: 1.5rem;
+	  color: rgb(50, 50, 50);
+	  margin-bottom: .25rem;
+	}
+	.place-review{
+	  color: red;
+	  font-style: italic;
+	}
+	.rating{
+	  color: rgb(253, 180, 42);
+	  margin: 1rem 0;
+	}
+	.desc-review{
+	  line-height: 1.5rem;
+	  letter-spacing: 1px;
+	  color: rgb(150, 150, 150);
+	}
+	
+	@media (max-width: 678px){
+	  .review{
+		margin-top: 1.5rem;
+	  }
+	}
+
+	  </style>
+	
+
+
+
+
+
+
+</head>
+<body >
+
+
+    <!-- Top Bar -->
+	<div class="top-bar ">
+		<div class="container"> <!-- Open the container div -->
+			
+			<div class="row">
+				<div class="col-12 text-right">
+					<p><a href="#">Call us at 07-1234567</a></p>
+				</div>
+			</div>
+		</div> 
+	</div>
+   
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <div class="container">
+        <!-- Logo -->
+        <a href="KampungKitchenDelight.html" class="navbar-brand"><img src="images/klogo.png" alt="Logo" title="Logo"></a>
+        
+        <!-- Navbar Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="KampungKitchenDelight.html" class="nav-link scrollto active">Homepage</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link scrollto ">About Us</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link scrollto ">Menu</a></li>
+                <li class="nav-item"><a href="location.html" class="nav-link scrollto ">Location</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link scrollto ">Contact Us</a></li>
+            </ul>
+		
+	
+	 </div>
+	 
+    </div>
+</nav>
+<!--indicator-->
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="650000"> 
+
+
+	<!-- Indicators -->
+	<ul class="carousel-indicators">
+	  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	  <li data-target="#carousel" data-slide-to="1"></li>
+	  <li data-target="#carousel" data-slide-to="2"></li>
+	</ul>
+
+  <!-- Image Carousel -->
+
+
+
+
+		<!-- Carousel Content -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<!--carousel here is folder-->
+			<!--w-100 is width to take full screen.The image will take up from 25, 50, and 100-->
+			<img src="images/slider/slider1.jpg" alt=""  class="w-100"
+			 >
+			<div class="carousel-caption">
+				<!--set container here because full width-->
+				<div class="container">
+					<!--when screen be a row it will match-->
+					<div class="row justify-content-center"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+						<!--d-none= display none-->
+						<div class="col-8 bg-custom d-md-block py-3 px-0">
+							<h1>Click Here</h1>
+							<div class="border-top border-primary w-50 mx-auto my-3"></div>
+							<h3>Reserve Your Table</h3>
+							<!--mr= margin right from bootstrap-->
+							<a href="contactus.html" class="btn btn-Book btn-lg ml-2 text-light">Book Now</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="carousel-item">
+					
+					<img src="images/Foods/nasi-lemak-malaysia-.jpg" alt="" class="w-100">
+					
+			
+					</div>
+				
+						<div class="carousel-item ">
+							
+							<img src="images/Foods/bak-kut-teh-1.jpg" alt="" class="w-100">
+							
+							
+
+							
+						</div>
+	</div>
+	</div>
+		<!-- End Carousel Content -->
+
+
+		<!-- Previous & Next Buttons -->
+	
+		<a href="#carousel" class="carousel-control-prev align-center" role="button" data-slide="prev">
+			<span class="fas fa-chevron-left fa-2x"></span>
+		</a>
+		<a href="#carousel" class="carousel-control-next align-center" role="button" data-slide="next">
+			<!--make icon twice a size-->
+			<span class="fas fa-chevron-right fa-2x"></span>
+		</a>
+		<!-- End Previous & Next Buttons -->
+	
+
+	<!--end homeage section-->	
+
+	 <!--Offers Prodcut Slider-->
+     <div class="offer-product">
+	 <div class="container my-4 py-4">
+		<div class="row justify-content-center">
+		  <div class="col-lg-7 col-md-8">
+			<div class="text-center">
+			  <h1 class="text-warning" style="font-size: 45px;">Delicious Foods and Drinks</h1>
+			  <img src="images/title-shape.svg" alt="">
+				<p class="text-light" style="font-size: 20px;">We offer a selection of traditional and unique foods and drinks for you to try.</p>
+			</div>
+		  </div>
+		</div>
+		<br>
+  
+		<div class="slider">
+		  <div class="mx-3">
+			<div class="card border-0 rounded-0"
+			  style="background-image:url(images/Foods/AsamLaksa.webp);background-size: cover;">
+			  <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+				<div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+				  <a class="text-white fw-bold">Asam Laksa</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="mx-3">
+			<div class="card border-0 rounded-0"
+			  style="background-image:url(images/Foods/NasiKerabu.webp) ;background-size: cover;">
+			  <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+				<div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+				  <a class="text-white fw-bold">Nasi Kerabu</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="mx-3">
+			<div class="card border-0 rounded-0"
+			  style="background-image:url(images/Snacks/Popiah.webp) ;background-size: cover;">
+			  <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+				<div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+				  <a class="text-white fw-bold">Popiah</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="mx-3">
+			<div class="card border-0 rounded-0"
+			  style="background-image:url(images/SnackS/RotiCanai.webp);background-size: cover;">
+			  <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+				<div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+				  <a class="text-white fw-bold">Roti Canai</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="mx-3">
+			<div class="card border-0 rounded-0"
+			  style="background-image:url(images/Drinks/SirapSelasih.png) ;background-size: cover;">
+			  <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+				<div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+				  <a class="text-white fw-bold">Sirap Selasih</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="mx-3">
+			<div class="card border-0 rounded-0"
+			  style="background-image:url(images/Drinks/IpohWhiteCoffe.png);background-size: cover;">
+			  <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+				<div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+				  <a class="text-white fw-bold">Ipoh White Coffe</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<!-- Customer review -->
+			<div class="col-md-12">
+				<div class="rev-section">
+					<h2 class="title"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">Our Customer's feedback</h2>
+					<p class="note text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">We encourage everyone to provide feedback to help us enhance your experience.</p>
+	
+					<div class="reviews">
+						<div class="col-lg-4 col-md-6 review" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+							<!-- Review 1 -->
+							<div class="head-review">
+								<img src="images/Customer/Lim.avif" class="img-fluid" alt="Mr. Lim">
+							</div>
+							<div class="body-review">
+								<div class="name-review">Mr. Lim</div>
+								<div class="place-review">Malaysia's Chinese</div>
+								<div class="rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half"></i>
+								</div>
+								<div class="desc-review">I love their restaurant environment, it makes me feel comfortable.</div>
+							</div>
+						</div>
+	
+						<div class="col-lg-4 col-md-6 review"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+							<!-- Review 2 -->
+							<div class="head-review">
+								<img src="images/Customer/Malay.jpeg" class="img-fluid" alt="Nurul">
+							</div>
+							<div class="body-review">
+								<div class="name-review">Nurul</div>
+								<div class="place-review">Malaysia's Malay</div>
+								<div class="rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<div class="desc-review">Their food is halal and tastes very nice, especially the nasi kerabu.</div>
+							</div>
+						</div>
+	
+						<div class="col-lg-4 col-md-6 review"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+							<!-- Review 3 -->
+							<div class="head-review">
+								<img src="images/Customer/Indian.avif" class="img-fluid" alt="Kevin">
+							</div>
+							<div class="body-review">
+								<div class="name-review">Kevin</div>
+								<div class="place-review">Malaysia's Indian</div>
+								<div class="rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half"></i>
+								</div>
+								<div class="desc-review">This restaurant includes our Malaysia traditional foods, and taste good.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end customer review-->
+	
+<!--- Footer -->
+<footer  class="footer-animation">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4 contact-info">
+				<img src="images/klogo.png" alt="">
+				<hr class="light">
+				<p><i class="fas fa-phone"></i>07-1234567</p>
+				<p><i class="far fa-envelope"></i>KampungKitchenDelight@gmail.com</p>
+				<p><i class="fas fa-map-marker-alt"></i>2， Jln Adda 3/3, Taman Adda Heights</p>
+				<div class="col-md-6 social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+            
+                </div>
+
+
+			</div>
+			
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Operation Hours</h5>
+				<hr class="light">
+				<p>Monday: 9am-9pm</p>
+				<p>Tuesday: 9am-9pm</p>
+				<p>Wednesday: 9am-9pm</p>
+				<p>Thursday: 9am-9pm</p>
+				<p>Friday: 9am-9pm</p>
+				<p>Saturday: 9am - 8pm</p>
+				<p>Sunday: closed</p>
+
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Core Values</h5>
+				<hr class="light">
+				<p>Authenticity</p>
+				<p>Quality Ingredients</p>
+				<p>Warm Hospitality</p>
+				<p>Community Connection</p>
+				
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy;🍲Kampung Kitchen Delights🍲</h5>
+			</div>
+
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+
+
+
+
+	
+
+<!-- ___________ Slick Slider ______________ -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+  $('.slider').slick({
+	centerMode: true,
+	dots: true,
+	autoplay: true,
+	centerPadding: '60px',
+	slidesToShow: 3,
+	responsive: [{
+	  breakpoint: 768,
+	  settings: {
+		arrows: false,
+		centerMode: true,
+		centerPadding: '40px',
+		Infinity: true,
+		slidesToShow: 1
+	  },
+	}]
+  });
+</script>
+<!--bootstrap animation-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+	duration: 3000,
+	once: true,
+  });
+</script>
+<!-- Script Source Files -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+	
+
+
+
+
+
+
+
+
+</body>
+</html>
